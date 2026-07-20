@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5PTS Games</title>
+  <meta name="description" content="5PTS Games — an indie team making Dinotopia, a cozy island game about raising your own dinosaurs.">
+  <style>
+    :root { --bg: #0a0a0a; --card: #171717; --ink: #f5f5f5; --sub: #b5b5b5; --line: #2c2c2c;
+            --dino-bg: #16281c; --dino-sub: #a8c3ab; --dino-accent: #7ed957; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    main { flex: 1; width: 100%; max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+    .logo { display: block; width: 100%; max-width: 420px; height: auto; margin: 0 auto; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; margin-top: 32px; }
+    .card h2 { font-size: 1.5rem; margin-bottom: 10px; }
+    .card p { color: var(--sub); line-height: 1.6; }
+    .card.dino { background: var(--dino-bg); border-color: transparent; }
+    .card.dino p { color: var(--dino-sub); }
+    .badge { display: inline-block; background: #24402c; color: var(--dino-accent); border-radius: 999px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600; margin-top: 14px; }
+    footer { text-align: center; color: var(--sub); font-size: 0.85rem; padding: 24px; }
+    a { color: var(--ink); }
+    .card.dino a { color: var(--dino-accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="5PTS Games">
+
+    <div class="card dino">
+      <h2>🦕 Dinotopia</h2>
+      <p>A cozy island game about raising your own dinosaurs — hatch eggs, feed your dinos as they
+         grow, and build a life on the island while your grown dinos gather resources alongside you.
+         Playable right in your browser.</p>
+      <span class="badge">In development — playtesting now</span>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Questions, feedback, or bug reports: <a href="mailto:5ptsgamestudio@gmail.com">5ptsgamestudio@gmail.com</a></p>
+      <p style="margin-top:8px"><a href="privacy.html">Privacy policy</a></p>
+    </div>
+  </main>
+  <footer>© 2026 5PTS Games</footer>
+</body>
+</html>
