@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinotopia — 5PTS Games</title>
+  <meta name="description" content="Dinotopia is a cozy island game by 5PTS Games about raising your own dinosaurs — hatch eggs, feed your dinos as they grow, and build a life on the island together.">
+  <link rel="canonical" href="https://5ptsgames.com/dinotopia.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="5PTS Games">
+  <meta property="og:title" content="Dinotopia — a cozy island game about raising dinosaurs">
+  <meta property="og:description" content="Hatch eggs, raise your dinos, and build a life on a cozy island. By 5PTS Games.">
+  <meta property="og:url" content="https://5ptsgames.com/dinotopia.html">
+  <meta property="og:image" content="https://5ptsgames.com/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Dinotopia",
+    "url": "https://5ptsgames.com/dinotopia.html",
+    "description": "A cozy island game about raising your own dinosaurs — hatch eggs, feed your dinos as they grow, and build a life on the island while your grown dinos gather resources alongside you.",
+    "genre": ["Simulation", "Casual"],
+    "gamePlatform": ["Web"],
+    "author": { "@type": "Organization", "name": "5PTS Games", "url": "https://5ptsgames.com/" },
+    "publisher": { "@type": "Organization", "name": "5PTS Games", "url": "https://5ptsgames.com/" }
+  }
+  </script>
+</head>
+<body class="t-dino">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-open="false">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="5PTS Games home">
+        <img src="logo.png" alt="5PTS Games">
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a class="nav-link active" href="index.html#games">Games</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="support.html">Support</a></li>
+        <li><a class="btn btn-primary btn-sm" href="mailto:contact@5ptsgames.com">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="orb orb-dino" aria-hidden="true" style="top:-180px; right:-120px; left:auto"></div>
+      <div class="container">
+        <p class="crumb"><a href="index.html">Home</a> / <a href="index.html#games">Games</a> / Dinotopia</p>
+        <span class="badge">Playtesting now</span>
+        <h1>Dinotopia</h1>
+        <p class="lede">
+          A cozy island game about raising your own dinosaurs. Hatch eggs, feed your dinos as they
+          grow, and build a life on the island — while your grown companions gather resources
+          alongside you.
+        </p>
+        <div class="meta-strip">
+          <span class="fact">🎮 Playable in your browser</span>
+          <span class="fact">📱 Mobile version in progress</span>
+          <span class="fact">🧡 Cozy · family friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="art-hero reveal">
+          <svg viewBox="0 0 640 400" role="img" aria-label="Dinotopia key art: a dinosaur on a moonlit island">
+            <defs>
+              <linearGradient id="dSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#143324"/><stop offset="0.6" stop-color="#0b1912"/><stop offset="1" stop-color="#081410"/>
+              </linearGradient>
+              <linearGradient id="dIsland" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1e5434"/><stop offset="1" stop-color="#143824"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#dSky)"/>
+            <g fill="#cfeedd">
+              <rect x="60" y="40" width="3" height="3" opacity="0.5"/><rect x="150" y="90" width="2.5" height="2.5" opacity="0.35"/>
+              <rect x="243" y="30" width="3" height="3" opacity="0.5"/><rect x="330" y="70" width="2" height="2" opacity="0.3"/>
+              <rect x="560" y="180" width="3" height="3" opacity="0.4"/><rect x="600" y="90" width="2.5" height="2.5" opacity="0.35"/>
+              <rect x="90" y="140" width="2.5" height="2.5" opacity="0.3"/><rect x="380" y="40" width="2.5" height="2.5" opacity="0.4"/>
+            </g>
+            <circle cx="478" cy="96" r="95" fill="#5fd66e" opacity="0.1"/>
+            <circle cx="478" cy="96" r="52" fill="#dff5d5"/>
+            <g fill="#bfe0b2">
+              <rect x="456" y="74" width="14" height="14" opacity="0.85"/>
+              <rect x="490" y="106" width="10" height="10" opacity="0.8"/>
+              <rect x="468" y="112" width="7" height="7" opacity="0.7"/>
+            </g>
+            <polygon points="0,265 90,215 170,250 260,205 350,255 640,232 640,400 0,400" fill="#12301f" opacity="0.9"/>
+            <rect x="0" y="268" width="640" height="132" fill="#0a1d15"/>
+            <g fill="#2e6b49">
+              <rect x="40" y="342" width="80" height="3" opacity="0.4"/><rect x="180" y="358" width="60" height="3" opacity="0.3"/>
+              <rect x="330" y="336" width="90" height="3" opacity="0.4"/><rect x="520" y="352" width="70" height="3" opacity="0.35"/>
+              <rect x="120" y="376" width="70" height="3" opacity="0.25"/><rect x="420" y="378" width="80" height="3" opacity="0.3"/>
+            </g>
+            <g fill="#7fd98f">
+              <rect x="452" y="298" width="48" height="4" opacity="0.3"/><rect x="460" y="316" width="32" height="3" opacity="0.25"/>
+              <rect x="448" y="334" width="40" height="3" opacity="0.2"/>
+            </g>
+            <polygon points="60,302 110,258 190,246 300,252 390,270 424,302 400,320 80,320" fill="url(#dIsland)"/>
+            <polygon points="80,320 400,320 380,332 100,332" fill="#0e2418"/>
+            <polygon points="148,260 156,260 153,196 149,198" fill="#4a3524"/>
+            <g fill="#2f8f52">
+              <polygon points="152,198 118,182 112,192 148,204"/>
+              <polygon points="152,196 128,162 137,156 157,196"/>
+              <polygon points="153,196 176,160 185,168 158,199"/>
+              <polygon points="153,199 190,190 188,201 155,205"/>
+            </g>
+            <rect x="146" y="203" width="6" height="6" fill="#3d2c1c"/>
+            <g fill="#0d281a">
+              <polygon points="214,248 236,258 262,264 262,278 234,268 212,256"/>
+              <rect x="258" y="246" width="84" height="36" rx="16"/>
+              <rect x="264" y="272" width="12" height="36"/>
+              <rect x="284" y="275" width="12" height="33"/>
+              <rect x="312" y="272" width="12" height="36"/>
+              <rect x="328" y="275" width="12" height="31"/>
+              <polygon points="330,254 350,250 374,172 358,166"/>
+              <polygon points="356,158 392,164 390,178 358,180"/>
+            </g>
+            <rect x="379" y="166" width="4" height="4" fill="#7ef58a"/>
+            <g fill="#16402a">
+              <rect x="341" y="240" width="7" height="7"/><rect x="352" y="212" width="6" height="6"/><rect x="359" y="188" width="6" height="6"/>
+            </g>
+            <g fill="#8df59a">
+              <rect x="200" y="222" width="4" height="4" opacity="0.9"/><rect x="242" y="182" width="3" height="3" opacity="0.7"/>
+              <rect x="430" y="222" width="4" height="4" opacity="0.8"/><rect x="500" y="252" width="3" height="3" opacity="0.6"/>
+              <rect x="172" y="152" width="3" height="3" opacity="0.5"/>
+            </g>
+            <circle cx="455" cy="182" r="6" fill="#7ef58a" opacity="0.25"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The game</p>
+          <h2>Raise them well.</h2>
+          <p class="lede">
+            Every dinosaur on your island starts as an egg. What happens next is up to you —
+            what you feed them, where they live, and what kind of island you build together.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3.5 0 6.5 4.4 6.5 9a6.5 6.5 0 1 1-13 0C5.5 7.4 8.5 3 12 3Z"/><path d="M9.5 10.5l2-2 2 2"/></svg>
+            </div>
+            <h4>Hatch &amp; raise</h4>
+            <p>Care for your dinos through every life stage — from wobbly hatchling to towering companion.</p>
+          </div>
+          <div class="feature reveal reveal-d1">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 18h18"/><path d="M6 18c0-5 2.5-9 6-9s6 4 6 9"/><path d="M12 9V4"/><path d="M12 4l4 2M12 4L8 6"/></svg>
+            </div>
+            <h4>Build your island</h4>
+            <p>Turn a quiet stretch of sand into a home. Everything on your island is earned, not bought.</p>
+          </div>
+          <div class="feature reveal reveal-d2">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4l6 6"/><path d="M17 7L5 19"/><path d="M12 6c2-2 5-3 8-2-1 3-2 6-4 8"/></svg>
+            </div>
+            <h4>Gather together</h4>
+            <p>Grown dinos pitch in — gathering resources alongside you while you plan what's next.</p>
+          </div>
+          <div class="feature reveal reveal-d3">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17a4.5 4.5 0 1 1 .8-8.9 6 6 0 0 1 11.4 1.8A3.5 3.5 0 0 1 18.5 17Z"/></svg>
+            </div>
+            <h4>Cozy pace</h4>
+            <p>No timers yelling at you. Dinotopia is happy to see you whether you play a little or a lot.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="panel two-col reveal">
+          <div>
+            <p class="eyebrow">Playtesting</p>
+            <h2 style="margin:14px 0 16px; font-size:clamp(1.7rem,3vw,2.3rem)">Help shape Dinotopia.</h2>
+            <p class="lede" style="max-width:520px">
+              Dinotopia is in active playtesting. If you're playing and something feels off —
+              or something feels great — we genuinely want to hear about it.
+            </p>
+            <div class="hero-actions" style="margin-top:26px">
+              <a class="btn btn-acc" href="mailto:contact@5ptsgames.com?subject=Dinotopia%20feedback">Send feedback</a>
+              <a class="btn btn-ghost" href="support.html">Player support</a>
+            </div>
+          </div>
+          <ul class="fact-list">
+            <li><span class="k">Developer</span><span class="v">5PTS Games LLC</span></li>
+            <li><span class="k">Status</span><span class="v">In development — playtesting</span></li>
+            <li><span class="k">Platforms</span><span class="v">Web browser · mobile in progress</span></li>
+            <li><span class="k">Privacy</span><span class="v"><a href="privacy.html">Privacy policy</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="5PTS Games">
+          <p>An independent game studio making playful, polished games for mobile and web.</p>
+          <p style="margin-top:12px"><a href="mailto:contact@5ptsgames.com">contact@5ptsgames.com</a></p>
+        </div>
+        <nav class="footer-col" aria-label="Games">
+          <h4>Games</h4>
+          <ul>
+            <li><a href="dinotopia.html">Dinotopia</a></li>
+            <li><a href="titan-miners.html">Titan Miners</a></li>
+            <li><a href="hookshot-hero.html">Hookshot Hero</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Studio">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="mailto:contact@5ptsgames.com">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 5PTS Games LLC. All rights reserved.</span>
+        <span>Made by a small team with big plans.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>

@@ -3,44 +3,438 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5PTS Games</title>
-  <meta name="description" content="5PTS Games — an indie team making Dinotopia, a cozy island game about raising your own dinosaurs.">
-  <style>
-    :root { --bg: #0a0a0a; --card: #171717; --ink: #f5f5f5; --sub: #b5b5b5; --line: #2c2c2c;
-            --dino-bg: #16281c; --dino-sub: #a8c3ab; --dino-accent: #7ed957; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
-    main { flex: 1; width: 100%; max-width: 760px; margin: 0 auto; padding: 48px 24px; }
-    .logo { display: block; width: 100%; max-width: 420px; height: auto; margin: 0 auto; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; margin-top: 32px; }
-    .card h2 { font-size: 1.5rem; margin-bottom: 10px; }
-    .card p { color: var(--sub); line-height: 1.6; }
-    .card.dino { background: var(--dino-bg); border-color: transparent; }
-    .card.dino p { color: var(--dino-sub); }
-    .badge { display: inline-block; background: #24402c; color: var(--dino-accent); border-radius: 999px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600; margin-top: 14px; }
-    footer { text-align: center; color: var(--sub); font-size: 0.85rem; padding: 24px; }
-    a { color: var(--ink); }
-    .card.dino a { color: var(--dino-accent); }
-  </style>
+  <title>5PTS Games — Independent Mobile Game Studio</title>
+  <meta name="description" content="5PTS Games is an independent studio making mobile games with heart — Dinotopia, Titan Miners, and Hookshot Hero. Small team. Big games.">
+  <link rel="canonical" href="https://5ptsgames.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="5PTS Games">
+  <meta property="og:title" content="5PTS Games — Independent Mobile Game Studio">
+  <meta property="og:description" content="Small team. Big games. We make Dinotopia, Titan Miners, and Hookshot Hero.">
+  <meta property="og:url" content="https://5ptsgames.com/">
+  <meta property="og:image" content="https://5ptsgames.com/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "5PTS Games",
+    "legalName": "5PTS Games LLC",
+    "url": "https://5ptsgames.com/",
+    "logo": "https://5ptsgames.com/logo.png",
+    "email": "contact@5ptsgames.com",
+    "description": "5PTS Games is an independent game studio making mobile games: Dinotopia, Titan Miners, and Hookshot Hero."
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <img class="logo" src="logo.png" alt="5PTS Games">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="card dino">
-      <h2>🦕 Dinotopia</h2>
-      <p>A cozy island game about raising your own dinosaurs — hatch eggs, feed your dinos as they
-         grow, and build a life on the island while your grown dinos gather resources alongside you.
-         Playable right in your browser.</p>
-      <span class="badge">In development — playtesting now</span>
+  <header class="nav" data-open="false">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="5PTS Games home">
+        <img src="logo.png" alt="5PTS Games">
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a class="nav-link active" href="index.html#games">Games</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="support.html">Support</a></li>
+        <li><a class="btn btn-primary btn-sm" href="mailto:contact@5ptsgames.com">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Questions, feedback, or bug reports: <a href="mailto:5ptsgamestudio@gmail.com">5ptsgamestudio@gmail.com</a></p>
-      <p style="margin-top:8px"><a href="privacy.html">Privacy policy</a></p>
-    </div>
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="orb orb-dino" aria-hidden="true"></div>
+      <div class="orb orb-titan" aria-hidden="true"></div>
+      <div class="orb orb-hook" aria-hidden="true"></div>
+
+      <div class="container">
+        <img class="hero-sticker" src="logo.png" alt="" aria-hidden="true">
+        <p class="eyebrow">Independent game studio</p>
+        <h1 class="display" style="margin-top:16px">Small team.<br>Big games.</h1>
+        <p class="lede" style="margin-top:20px">
+          5PTS Games is an indie studio building playful, polished games for mobile and web —
+          from cozy dinosaur islands to deep-earth mining runs and rooftop grappling sprints.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">See our games</a>
+          <a class="btn btn-ghost" href="mailto:contact@5ptsgames.com">Get in touch</a>
+        </div>
+        <div class="hero-facts">
+          <span class="fact">100% independent</span>
+          <span class="fact">Three games in the works</span>
+          <span class="fact">Built for mobile &amp; web</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Games ============ -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our games</p>
+          <h2>What we're making.</h2>
+          <p class="lede">Every 5PTS game starts with one feeling we want you to have — cozy, greedy, or weightless — and gets built until it delivers.</p>
+        </div>
+
+        <div class="games-grid">
+
+          <!-- Dinotopia -->
+          <a class="game-card t-dino reveal" href="dinotopia.html">
+            <div class="game-art">
+              <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dinotopia key art: a dinosaur on a moonlit island">
+                <defs>
+                  <linearGradient id="dSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#143324"/><stop offset="0.6" stop-color="#0b1912"/><stop offset="1" stop-color="#081410"/>
+                  </linearGradient>
+                  <linearGradient id="dIsland" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#1e5434"/><stop offset="1" stop-color="#143824"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="400" fill="url(#dSky)"/>
+                <g fill="#cfeedd">
+                  <rect x="60" y="40" width="3" height="3" opacity="0.5"/><rect x="150" y="90" width="2.5" height="2.5" opacity="0.35"/>
+                  <rect x="243" y="30" width="3" height="3" opacity="0.5"/><rect x="330" y="70" width="2" height="2" opacity="0.3"/>
+                  <rect x="560" y="180" width="3" height="3" opacity="0.4"/><rect x="600" y="90" width="2.5" height="2.5" opacity="0.35"/>
+                  <rect x="90" y="140" width="2.5" height="2.5" opacity="0.3"/><rect x="380" y="40" width="2.5" height="2.5" opacity="0.4"/>
+                </g>
+                <circle cx="478" cy="96" r="95" fill="#5fd66e" opacity="0.1"/>
+                <circle cx="478" cy="96" r="52" fill="#dff5d5"/>
+                <g fill="#bfe0b2">
+                  <rect x="456" y="74" width="14" height="14" opacity="0.85"/>
+                  <rect x="490" y="106" width="10" height="10" opacity="0.8"/>
+                  <rect x="468" y="112" width="7" height="7" opacity="0.7"/>
+                </g>
+                <polygon points="0,265 90,215 170,250 260,205 350,255 640,232 640,400 0,400" fill="#12301f" opacity="0.9"/>
+                <rect x="0" y="268" width="640" height="132" fill="#0a1d15"/>
+                <g fill="#2e6b49">
+                  <rect x="40" y="342" width="80" height="3" opacity="0.4"/><rect x="180" y="358" width="60" height="3" opacity="0.3"/>
+                  <rect x="330" y="336" width="90" height="3" opacity="0.4"/><rect x="520" y="352" width="70" height="3" opacity="0.35"/>
+                  <rect x="120" y="376" width="70" height="3" opacity="0.25"/><rect x="420" y="378" width="80" height="3" opacity="0.3"/>
+                </g>
+                <g fill="#7fd98f">
+                  <rect x="452" y="298" width="48" height="4" opacity="0.3"/><rect x="460" y="316" width="32" height="3" opacity="0.25"/>
+                  <rect x="448" y="334" width="40" height="3" opacity="0.2"/>
+                </g>
+                <polygon points="60,302 110,258 190,246 300,252 390,270 424,302 400,320 80,320" fill="url(#dIsland)"/>
+                <polygon points="80,320 400,320 380,332 100,332" fill="#0e2418"/>
+                <!-- palm -->
+                <polygon points="148,260 156,260 153,196 149,198" fill="#4a3524"/>
+                <g fill="#2f8f52">
+                  <polygon points="152,198 118,182 112,192 148,204"/>
+                  <polygon points="152,196 128,162 137,156 157,196"/>
+                  <polygon points="153,196 176,160 185,168 158,199"/>
+                  <polygon points="153,199 190,190 188,201 155,205"/>
+                </g>
+                <rect x="146" y="203" width="6" height="6" fill="#3d2c1c"/>
+                <!-- brachiosaurus -->
+                <g fill="#0d281a">
+                  <polygon points="214,248 236,258 262,264 262,278 234,268 212,256"/>
+                  <rect x="258" y="246" width="84" height="36" rx="16"/>
+                  <rect x="264" y="272" width="12" height="36"/>
+                  <rect x="284" y="275" width="12" height="33"/>
+                  <rect x="312" y="272" width="12" height="36"/>
+                  <rect x="328" y="275" width="12" height="31"/>
+                  <polygon points="330,254 350,250 374,172 358,166"/>
+                  <polygon points="356,158 392,164 390,178 358,180"/>
+                </g>
+                <rect x="379" y="166" width="4" height="4" fill="#7ef58a"/>
+                <g fill="#16402a">
+                  <rect x="341" y="240" width="7" height="7"/><rect x="352" y="212" width="6" height="6"/><rect x="359" y="188" width="6" height="6"/>
+                </g>
+                <!-- fireflies -->
+                <g fill="#8df59a">
+                  <rect x="200" y="222" width="4" height="4" opacity="0.9"/><rect x="242" y="182" width="3" height="3" opacity="0.7"/>
+                  <rect x="430" y="222" width="4" height="4" opacity="0.8"/><rect x="500" y="252" width="3" height="3" opacity="0.6"/>
+                  <rect x="172" y="152" width="3" height="3" opacity="0.5"/>
+                </g>
+                <circle cx="455" cy="182" r="6" fill="#7ef58a" opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="game-body">
+              <div class="game-title-row">
+                <h3>Dinotopia</h3>
+                <span class="badge">Playtesting</span>
+              </div>
+              <p>Hatch eggs, raise your dinos, and build a life on a cozy island — while your grown companions gather resources alongside you.</p>
+              <span class="game-more">About the game</span>
+            </div>
+          </a>
+
+          <!-- Titan Miners -->
+          <a class="game-card t-titan reveal reveal-d1" href="titan-miners.html">
+            <div class="game-art">
+              <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Titan Miners key art: a glowing ore cart deep in a crystal cavern">
+                <defs>
+                  <linearGradient id="tBg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#171009"/><stop offset="1" stop-color="#0b0705"/>
+                  </linearGradient>
+                  <radialGradient id="tGlow" cx="0.5" cy="0.5" r="0.5">
+                    <stop offset="0" stop-color="#ff9d2e" stop-opacity="0.55"/><stop offset="1" stop-color="#ff9d2e" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="tCrys" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ffd97a"/><stop offset="1" stop-color="#ff8c1f"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="400" fill="url(#tBg)"/>
+                <ellipse cx="320" cy="404" rx="320" ry="130" fill="url(#tGlow)"/>
+                <polygon points="0,0 640,0 640,58 560,46 498,84 430,56 360,90 290,58 210,94 140,62 70,90 0,56" fill="#0d0906"/>
+                <polygon points="0,56 70,90 44,190 88,258 32,340 0,400" fill="#0f0a06"/>
+                <polygon points="640,58 574,92 606,180 560,262 612,344 640,400" fill="#0f0a06"/>
+                <!-- support beams -->
+                <rect x="150" y="116" width="230" height="12" fill="#241a0c"/>
+                <rect x="150" y="114" width="230" height="3" fill="#33230f"/>
+                <rect x="150" y="120" width="13" height="280" fill="#1d1309"/>
+                <rect x="366" y="120" width="13" height="280" fill="#1d1309"/>
+                <!-- tunnel + rails -->
+                <rect x="286" y="214" width="70" height="46" fill="#060403"/>
+                <rect x="292" y="250" width="58" height="10" fill="#2a1708" opacity="0.7"/>
+                <g stroke="#46331d" fill="none">
+                  <line x1="252" y1="400" x2="306" y2="252" stroke-width="6"/>
+                  <line x1="392" y1="400" x2="336" y2="252" stroke-width="6"/>
+                </g>
+                <g fill="#332514">
+                  <rect x="258" y="378" width="128" height="7"/><rect x="270" y="348" width="104" height="6"/>
+                  <rect x="280" y="320" width="84" height="6"/><rect x="288" y="296" width="68" height="5"/>
+                  <rect x="294" y="274" width="56" height="5"/>
+                </g>
+                <!-- minecart with glowing ore -->
+                <circle cx="320" cy="308" r="34" fill="#ffab2e" opacity="0.16"/>
+                <g fill="url(#tCrys)">
+                  <polygon points="298,318 312,296 326,318"/>
+                  <polygon points="316,318 332,292 348,318"/>
+                  <polygon points="290,318 300,304 310,318"/>
+                </g>
+                <polygon points="283,316 359,316 350,354 292,354" fill="#241a10"/>
+                <rect x="290" y="322" width="60" height="3" fill="#3a2a17"/>
+                <rect x="293" y="332" width="52" height="3" fill="#3a2a17"/>
+                <rect x="296" y="352" width="12" height="12" fill="#0d0906"/>
+                <rect x="334" y="352" width="12" height="12" fill="#0d0906"/>
+                <rect x="300" y="356" width="4" height="4" fill="#ffab2e"/>
+                <rect x="338" y="356" width="4" height="4" fill="#ffab2e"/>
+                <!-- crystal clusters -->
+                <circle cx="95" cy="360" r="46" fill="#ffab2e" opacity="0.12"/>
+                <g fill="url(#tCrys)">
+                  <polygon points="70,400 92,318 114,400"/>
+                  <polygon points="106,400 124,344 142,400"/>
+                  <polygon points="48,400 60,352 74,400"/>
+                </g>
+                <polygon points="90,392 92,334 96,392" fill="#fff3d8" opacity="0.45"/>
+                <circle cx="566" cy="282" r="40" fill="#ffab2e" opacity="0.12"/>
+                <g fill="url(#tCrys)">
+                  <polygon points="540,302 588,268 598,286 552,314"/>
+                  <polygon points="556,258 592,236 600,250 566,272"/>
+                </g>
+                <!-- embers -->
+                <g fill="#ffb84d">
+                  <rect x="200" y="240" width="4" height="4" opacity="0.8"/><rect x="424" y="200" width="3" height="3" opacity="0.6"/>
+                  <rect x="252" y="160" width="3" height="3" opacity="0.5"/><rect x="500" y="330" width="4" height="4" opacity="0.7"/>
+                  <rect x="382" y="140" width="2.5" height="2.5" opacity="0.45"/><rect x="160" y="310" width="3" height="3" opacity="0.55"/>
+                </g>
+                <circle cx="330" cy="196" r="5" fill="#ff9d2e" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="game-body">
+              <div class="game-title-row">
+                <h3>Titan Miners</h3>
+                <span class="badge">In development</span>
+              </div>
+              <p>Dig deep, upgrade your rig, and haul titan-sized riches back from the dark. A satisfying mining grind with big payoffs.</p>
+              <span class="game-more">About the game</span>
+            </div>
+          </a>
+
+          <!-- Hookshot Hero -->
+          <a class="game-card t-hook reveal reveal-d2" href="hookshot-hero.html">
+            <div class="game-art">
+              <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Hookshot Hero key art: a hero swinging between rooftops at dusk">
+                <defs>
+                  <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#16204a"/><stop offset="0.55" stop-color="#0d1226"/><stop offset="1" stop-color="#080b16"/>
+                  </linearGradient>
+                  <radialGradient id="hHalo" cx="0.5" cy="0.5" r="0.5">
+                    <stop offset="0" stop-color="#d9ecff" stop-opacity="0.5"/><stop offset="1" stop-color="#d9ecff" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <rect width="640" height="400" fill="url(#hSky)"/>
+                <g fill="#cfe0f5">
+                  <rect x="80" y="50" width="3" height="3" opacity="0.5"/><rect x="300" y="36" width="2.5" height="2.5" opacity="0.4"/>
+                  <rect x="430" y="80" width="3" height="3" opacity="0.45"/><rect x="540" y="120" width="2.5" height="2.5" opacity="0.35"/>
+                  <rect x="240" y="90" width="2" height="2" opacity="0.3"/><rect x="500" y="30" width="2.5" height="2.5" opacity="0.4"/>
+                </g>
+                <circle cx="180" cy="150" r="112" fill="url(#hHalo)"/>
+                <circle cx="180" cy="150" r="62" fill="#cfe4fa" opacity="0.9"/>
+                <rect x="158" y="128" width="16" height="16" fill="#aac8e8" opacity="0.8"/>
+                <rect x="192" y="164" width="11" height="11" fill="#aac8e8" opacity="0.7"/>
+                <!-- far skyline -->
+                <g fill="#141d3d" opacity="0.85">
+                  <rect x="0" y="222" width="52" height="178"/><polygon points="60,400 60,196 84,182 108,196 108,400"/>
+                  <rect x="118" y="238" width="44" height="162"/><rect x="230" y="210" width="38" height="190"/>
+                  <rect x="276" y="242" width="52" height="158"/><polygon points="338,400 338,204 356,190 394,204 394,400"/>
+                  <rect x="404" y="228" width="42" height="172"/><rect x="560" y="216" width="48" height="184"/>
+                  <rect x="616" y="240" width="24" height="160"/>
+                </g>
+                <!-- mid skyline with windows -->
+                <g fill="#0e1630">
+                  <rect x="20" y="262" width="70" height="138"/><rect x="150" y="248" width="60" height="152"/>
+                  <polygon points="250,400 250,238 282,222 314,238 314,400"/><rect x="360" y="256" width="66" height="144"/>
+                  <rect x="500" y="244" width="72" height="156"/>
+                </g>
+                <g fill="#3fc6ff">
+                  <rect x="32" y="276" width="3.5" height="3.5" opacity="0.5"/><rect x="58" y="300" width="3.5" height="3.5" opacity="0.4"/>
+                  <rect x="164" y="262" width="3.5" height="3.5" opacity="0.5"/><rect x="186" y="290" width="3.5" height="3.5" opacity="0.35"/>
+                  <rect x="266" y="252" width="3.5" height="3.5" opacity="0.45"/><rect x="292" y="274" width="3.5" height="3.5" opacity="0.5"/>
+                  <rect x="376" y="270" width="3.5" height="3.5" opacity="0.4"/><rect x="404" y="296" width="3.5" height="3.5" opacity="0.5"/>
+                  <rect x="516" y="258" width="3.5" height="3.5" opacity="0.45"/><rect x="544" y="284" width="3.5" height="3.5" opacity="0.4"/>
+                </g>
+                <!-- near buildings -->
+                <polygon points="0,282 128,282 150,300 150,400 0,400" fill="#070b18"/>
+                <polygon points="470,262 640,262 640,400 470,400 470,282 486,262" fill="#070b18"/>
+                <rect x="490" y="236" width="5" height="28" fill="#070b18"/>
+                <rect x="490" y="230" width="6" height="6" fill="#62d4ff" opacity="0.9"/>
+                <g fill="#62d4ff" opacity="0.85">
+                  <rect x="24" y="300" width="4.5" height="4.5"/><rect x="60" y="322" width="4.5" height="4.5"/>
+                  <rect x="100" y="306" width="4.5" height="4.5"/><rect x="510" y="290" width="4.5" height="4.5"/>
+                  <rect x="556" y="316" width="4.5" height="4.5"/><rect x="600" y="286" width="4.5" height="4.5"/>
+                </g>
+                <g fill="#ffd27a" opacity="0.75">
+                  <rect x="82" y="344" width="4.5" height="4.5"/><rect x="580" y="346" width="4.5" height="4.5"/>
+                </g>
+                <!-- motion arc + rope + hero -->
+                <path d="M 150 340 Q 250 205 366 152" stroke="#3fc6ff" stroke-width="2" fill="none" stroke-dasharray="6 9" opacity="0.5"/>
+                <g fill="#48ccff">
+                  <rect x="196" y="296" width="4" height="4" opacity="0.5"/><rect x="248" y="248" width="3.5" height="3.5" opacity="0.6"/>
+                  <rect x="304" y="204" width="4" height="4" opacity="0.7"/>
+                </g>
+                <path d="M 600 48 Q 480 62 378 148" stroke="#8fdcff" stroke-width="6" fill="none" opacity="0.14"/>
+                <path d="M 600 48 Q 480 62 378 148" stroke="#8fdcff" stroke-width="2.5" fill="none" opacity="0.95"/>
+                <rect x="594" y="42" width="11" height="11" fill="#9fe2ff"/>
+                <circle cx="365" cy="158" r="30" fill="#3fc6ff" opacity="0.14"/>
+                <g fill="#2a3d78">
+                  <rect x="356" y="148" width="17" height="21" rx="3"/>
+                  <rect x="357" y="135" width="13" height="13" rx="2"/>
+                  <polygon points="368,152 390,139 394,146 373,158"/>
+                  <polygon points="356,167 342,182 349,187 362,172"/>
+                  <polygon points="363,168 357,187 365,189 370,171"/>
+                  <polygon points="343,150 356,146 356,161 338,163"/>
+                </g>
+                <rect x="359" y="139" width="9" height="4" fill="#62d4ff"/>
+              </svg>
+            </div>
+            <div class="game-body">
+              <div class="game-title-row">
+                <h3>Hookshot Hero</h3>
+                <span class="badge">In development</span>
+              </div>
+              <p>Grapple, swing, and soar through levels built for momentum. Easy to pick up, very hard to put down.</p>
+              <span class="game-more">About the game</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Studio ============ -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="panel two-col reveal">
+          <div>
+            <p class="eyebrow">The studio</p>
+            <h2 style="margin:14px 0 16px; font-size:clamp(1.7rem,3vw,2.3rem)">Small by design.</h2>
+            <p class="lede" style="max-width:520px">
+              5PTS Games is a small independent studio. No publishers, no bloat — just a tight team
+              that designs, builds, and ships its own games, and answers its own support emails.
+            </p>
+            <div class="hero-actions" style="margin-top:26px">
+              <a class="btn btn-ghost" href="about.html">More about us</a>
+            </div>
+          </div>
+          <ul class="fact-list">
+            <li><span class="k">Studio</span><span class="v">5PTS Games LLC</span></li>
+            <li><span class="k">Focus</span><span class="v">Mobile &amp; web games</span></li>
+            <li><span class="k">Games</span><span class="v">Dinotopia · Titan Miners · Hookshot Hero</span></li>
+            <li><span class="k">Contact</span><span class="v"><a href="mailto:contact@5ptsgames.com">contact@5ptsgames.com</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="panel panel-center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 style="font-size:clamp(1.8rem,3.4vw,2.5rem)">Say hello.</h2>
+          <p class="lede">
+            Questions, feedback, bug reports, or business inquiries — we read everything.
+          </p>
+          <div class="hero-actions" style="justify-content:center; margin-top:10px">
+            <a class="btn btn-primary" href="mailto:contact@5ptsgames.com">contact@5ptsgames.com</a>
+            <a class="btn btn-ghost" href="support.html">Player support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer>© 2026 5PTS Games</footer>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="5PTS Games">
+          <p>An independent game studio making playful, polished games for mobile and web.</p>
+          <p style="margin-top:12px"><a href="mailto:contact@5ptsgames.com">contact@5ptsgames.com</a></p>
+        </div>
+        <nav class="footer-col" aria-label="Games">
+          <h4>Games</h4>
+          <ul>
+            <li><a href="dinotopia.html">Dinotopia</a></li>
+            <li><a href="titan-miners.html">Titan Miners</a></li>
+            <li><a href="hookshot-hero.html">Hookshot Hero</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Studio">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="mailto:contact@5ptsgames.com">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 5PTS Games LLC. All rights reserved.</span>
+        <span>Made by a small team with big plans.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
 </body>
 </html>
