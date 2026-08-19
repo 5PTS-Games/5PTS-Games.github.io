@@ -223,12 +223,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
   border-color: color-mix(in srgb, var(--acc) 45%, transparent);
   box-shadow: 0 28px 64px -28px color-mix(in srgb, var(--acc) 40%, transparent);
 }
-.game-art { aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); }
-.game-art svg { width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
-.game-card:hover .game-art svg { transform: scale(1.04); }
-.game-body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
-.game-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.game-body h3 { font-size: 1.4rem; letter-spacing: -0.02em; }
+.game-card::before { content: ""; display: block; height: 4px; background: var(--acc); opacity: 0.85; }
+.game-body { padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.game-title-row { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 12px; }
+.game-body h3 { font-size: 1.5rem; letter-spacing: -0.02em; }
 .game-body p { color: var(--sub); font-size: 0.94rem; line-height: 1.65; flex: 1; }
 .game-more {
   font-family: var(--font-display); font-weight: 500; font-size: 0.9rem; color: var(--acc);
@@ -245,12 +243,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 .crumb a:hover { color: var(--ink); }
 .page-hero h1 { font-size: clamp(2.4rem, 5.5vw, 3.7rem); letter-spacing: -0.035em; margin: 14px 0 16px; }
 .page-hero .lede { max-width: 640px; }
-
-.art-hero {
-  border: 1px solid var(--line); border-radius: 22px; overflow: hidden;
-  box-shadow: 0 40px 100px -40px color-mix(in srgb, var(--acc) 30%, transparent);
-}
-.art-hero svg { width: 100%; height: auto; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
 .feature {
