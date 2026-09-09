@@ -1,0 +1,13 @@
+# app-ads.txt for 5ptsgames.com
+# App: Hookshot Henry (com.studio5pts.hookshothenry)
+# Host this file at the domain root so it resolves at:
+#   https://5ptsgames.com/app-ads.txt
+# (The Play Store listing's "Website" field must be 5ptsgames.com for crawlers to match it.)
+
+OWNERDOMAIN=5ptsgames.com
+
+# ironSource / Unity LevelPlay  (Publisher ID 682283; 79929e88b2ba73bc = ironSource's TAG cert ID)
+ironsrc.com, 682283, DIRECT, 79929e88b2ba73bc
+
+# Google AdMob  (Publisher ID pub-6024631523104957)
+google.com, pub-6024631523104957, DIRECT, f08c47fec0942fa0
