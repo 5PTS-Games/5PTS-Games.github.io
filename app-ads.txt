@@ -11,3 +11,6 @@ ironsrc.com, 682283, DIRECT, 79929e88b2ba73bc
 
 # Google AdMob  (Publisher ID pub-6024631523104957)
 google.com, pub-6024631523104957, DIRECT, f08c47fec0942fa0
+
+# Liftoff Monetize (Vungle)
+vungle.com, 6ab18aebc8c1b61c3840187e, DIRECT, c107d686becd2d77
