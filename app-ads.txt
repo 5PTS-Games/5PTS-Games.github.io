@@ -14,3 +14,6 @@ google.com, pub-6024631523104957, DIRECT, f08c47fec0942fa0
 
 # Liftoff Monetize (Vungle)
 vungle.com, 6ab18aebc8c1b61c3840187e, DIRECT, c107d686becd2d77
+
+# Pangle  (Publisher ID 5044165)
+pangleglobal.com, 5044165, DIRECT
