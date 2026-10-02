@@ -2,7 +2,7 @@
    5PTS Games — site-wide design system
    Dark & bold. The studio is black & white (like the logo);
    the games bring the color: --dino (green) --titan (amber) --hook (cyan)
-   --golf (pink, the colour of its ball's neon trail).
+   --golf (pink, the colour of its ball's neon trail) --wave (violet).
    ========================================================================== */
 
 :root {
@@ -20,6 +20,7 @@
   --titan: #ffab2e;
   --hook: #3fc6ff;
   --golf: #ff7eb6;
+  --wave: #9d8cff;
   --acc: #f2f5f7; /* default accent = studio white; game themes override */
 
   --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
@@ -34,6 +35,7 @@
 .t-titan { --acc: var(--titan); }
 .t-hook  { --acc: var(--hook); }
 .t-golf  { --acc: var(--golf); }
+.t-wave  { --acc: var(--wave); }
 
 /* ---------- Reset / base ---------- */
 
@@ -183,6 +185,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 .orb-titan { width: 380px; height: 380px; background: var(--titan); top: -80px;  right: -140px; }
 .orb-hook  { width: 420px; height: 420px; background: var(--hook);  bottom: -220px; left: 34%; opacity: 0.1; }
 .orb-golf  { width: 420px; height: 420px; background: var(--golf);  top: -170px;   right: -130px; }
+.orb-wave  { width: 420px; height: 420px; background: var(--wave);  top: -170px;   right: -130px; }
 
 .hero .container { position: relative; }
 
