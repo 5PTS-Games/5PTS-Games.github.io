@@ -1,7 +1,8 @@
 /* ==========================================================================
    5PTS Games — site-wide design system
    Dark & bold. The studio is black & white (like the logo);
-   the games bring the color: --dino (green) --titan (amber) --hook (cyan).
+   the games bring the color: --dino (green) --titan (amber) --hook (cyan)
+   --golf (pink, the colour of its ball's neon trail).
    ========================================================================== */
 
 :root {
@@ -18,6 +19,7 @@
   --dino: #5fd66e;
   --titan: #ffab2e;
   --hook: #3fc6ff;
+  --golf: #ff7eb6;
   --acc: #f2f5f7; /* default accent = studio white; game themes override */
 
   --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
@@ -31,6 +33,7 @@
 .t-dino  { --acc: var(--dino); }
 .t-titan { --acc: var(--titan); }
 .t-hook  { --acc: var(--hook); }
+.t-golf  { --acc: var(--golf); }
 
 /* ---------- Reset / base ---------- */
 
@@ -178,6 +181,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 .orb-dino  { width: 420px; height: 420px; background: var(--dino);  top: -140px; left: -120px; }
 .orb-titan { width: 380px; height: 380px; background: var(--titan); top: -80px;  right: -140px; }
 .orb-hook  { width: 420px; height: 420px; background: var(--hook);  bottom: -220px; left: 34%; opacity: 0.1; }
+.orb-golf  { width: 420px; height: 420px; background: var(--golf);  top: -170px;   right: -130px; }
 
 .hero .container { position: relative; }
 
@@ -234,6 +238,25 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 }
 .game-more::after { content: "→"; transition: transform 0.25s; }
 .game-card:hover .game-more::after { transform: translateX(4px); }
+
+/* The game you can play now: full width above the rest, its screenshot beside
+   the text. The accent strip is lifted out of the grid so it stays a strip. */
+.game-card-feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1.15fr 1fr; }
+.game-card-feature::before { position: absolute; inset: 0 0 auto 0; z-index: 1; }
+.game-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 980px) { .game-card-feature { grid-template-columns: 1fr; } }
+
+/* A game page's screenshot, framed, as a link into the game. */
+.game-shot {
+  display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.35s, box-shadow 0.35s;
+}
+.game-shot img { display: block; width: 100%; height: auto; }
+.game-shot:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--acc) 45%, transparent);
+  box-shadow: 0 28px 64px -28px color-mix(in srgb, var(--acc) 40%, transparent);
+}
 
 /* ---------- Game page ---------- */
 
