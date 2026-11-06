@@ -23,6 +23,7 @@
   --golf: #ff7eb6;
   --wave: #9d8cff;
   --hole: #ffd21f;
+  --hakai: #ff5a3c;
   --acc: #f2f5f7; /* default accent = studio white; game themes override */
 
   --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
@@ -39,6 +40,7 @@
 .t-golf  { --acc: var(--golf); }
 .t-wave  { --acc: var(--wave); }
 .t-hole  { --acc: var(--hole); }
+.t-hakai { --acc: var(--hakai); }
 
 /* ---------- Reset / base ---------- */
 
@@ -190,6 +192,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 .orb-golf  { width: 420px; height: 420px; background: var(--golf);  top: -170px;   right: -130px; }
 .orb-wave  { width: 420px; height: 420px; background: var(--wave);  top: -170px;   right: -130px; }
 .orb-hole  { width: 420px; height: 420px; background: var(--hole);  top: -170px;   right: -130px; }
+.orb-hakai { width: 420px; height: 420px; background: var(--hakai); top: -170px;   right: -130px; }
 
 .hero .container { position: relative; }
 
